@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovenes Tejiendo Lazos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('torneo') }}">Torneos</a>
+            <a href="{{ url_for('cultura') }}">Cultura</a>
+            <a href="{{ url_for('cuentos') }}">Cambiemos el cuento</a>
+            <a href="{{ url_for('musicoterapia') }}">Musicoterapia</a>
+             <a href="{{ url_for('cursos') }}">Cursos de ingles</a>
+            <a href="{{ url_for('beneficiarios') }}">Beneficiarios</a>
+            <a href="{{ url_for('salud') }}">Salud</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Jovenes Tejiendo Lazos</h1>
+            <p>¡Quienes somos!</p>
+          
+        </div>
+    </section>
+
+       <!-- informacion principal -->
+    <section class="informacion">
+        <div class="info">
+            <h1>Misión de Juventudes Tejiendo Lazos A.C.</h1>
+            <p>La misión de Juventudes Tejiendo Lazos A.C. es conjuntar esfuerzos con diversos 
+ sectores sociales para promover la transición de las juventudes hacia la emancipación y
+ autonomía, fomentando su bienestar integral a través de acciones educativas, laborales, 
+ de salud, vivienda y entornos sanos. Utilizando el fútbol callejero como herramienta principal 
+ de intervención social, impulsamos la ciudadanía plena, la creatividad, la participación juvenil, 
+ la protección al medio ambiente, la cultura, el arte y la inclusión, con el fin de abordar temas como 
+ la violencia, la exclusión social, los derechos humanos, la diversidad y la igualdad sustantiva,
+ contribuyendo al desarrollo social y cultural de las comunidades.</p>
+ <h2>-------------------------------------------------------------------------------------------------------------------------</h2>
+ <h1>Visión de Juventudes Tejiendo Lazos A.C.</h1>
+        <p2>Ser una organización referente en Latinoamérica en el desarrollo juvenil, donde las juventudes 
+ alcancen una ciudadanía plena y autónoma en lo económico, social y cultural. Aspiramos a un futuro en el que, 
+ a través de metodologías innovadoras como el fútbol callejero y actividades complementarias de educación, arte, 
+ medio ambiente e inclusión, se eliminen barreras de exclusión y violencia, fomentando líderes comunitarios empoderados, 
+ comunidades sostenibles y una red global de colaboración que inspire a las nuevas generaciones a construir sociedades equitativas,
+  creativas y solidarias.</p2>
+  <h4>------------------------------------------------------------------------------------------------------------------------</h4>
+  <h1>Valores de Juventudes Tejiendo Lazos A.C.</h1>
+  <p3> •	Respeto: Fomentar el reconocimiento mutuo y la valoración de los derechos humanos en cada interacción, especialmente a través de las reglas del fútbol callejero que priorizan acuerdos entre participantes. </p3>
+   <p4>•	Compromiso: Trabajar incansablemente por el bienestar y la emancipación de las juventudes, integrándolas en actividades que promuevan su desarrollo integral.</p4>
+   <p5>•	Solidaridad: Promover la cooperación y el apoyo mutuo, tanto en el juego como en la comunidad, creando espacios de inclusión y apoyo colectivo.</p5>
+   <p6>•	Creatividad: Estimular la inventiva y la participación activa de los jóvenes en actividades artísticas, culturales y tecnológicas que enriquezcan su entorno.</p6>
+   <p7>•	Inclusión: Garantizar la participación equitativa de todos, con equipos mixtos y espacios accesibles que abordan la diversidad y la igualdad sustantiva.</p7>
+   <p8>•	Coexistencia: Cultivar un ambiente de diálogo y reflexión que fomente la resolución pacífica de conflictos y el entendimiento mutuo.</p8>
+    <p9>•	Compañerismo: Fortalecer los lazos de amistad y colaboración entre los participantes, promoviendo un sentido de comunidad y trabajo en equipo en todas las actividades.</p9>
+
+ </div>
+ </section>
+
+
+    <!-- NOTICIAS -->
+    <section class="noticias">
+        <h2>NOTICIAS DESTACADAS</h2>
+
+        <div class="noticias-grid">
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/fut3.jpg') }}" alt="Noticia 1">
+                <div class="info">
+                    <h3>15 DE ABRIL</h3>
+                    <p>Llega la nueva edición del torneo</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/P1150636.JPG') }}" alt="Noticia 2">
+                <div class="info">
+                    <h3>1 DE ABRIL</h3>
+                    <p>Resultados y fotos del torneo 2025</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/P1150646.jpg') }}" alt="Noticia 3">
+                <div class="info">
+                    <h3>23 DE MARZO</h3>
+                    <p>Conoce las reglas del torneo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social">
+            <a href="#">📷</a>
+            <a href="#">📘</a>
+        </div>
+        <p>PARTICIPANTES: Patrocinadores</p>
+    </footer>
+
+</body>
+</html>

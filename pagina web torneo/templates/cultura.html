@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion del area de la Salud </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('torneo') }}">Torneos</a>
+            <a href="{{ url_for('cultura') }}">Cultura</a>
+            <a href="{{ url_for('cuentos') }}">Cambiemos el cuento</a>
+            <a href="{{ url_for('musicoterapia') }}">Musicoterapia</a>
+             <a href="{{ url_for('cursos') }}">Cursos de ingles</a>
+            <a href="{{ url_for('beneficiarios') }}">Beneficiarios</a>
+            <a href="{{ url_for('salud') }}">Salud</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+        </nav>
+    </header>
+      
+<!-- CULTURA -->
+    <section class="cultura">
+        <div class="overlay">
+           <h1>DATOS CULTURALES</h1>
+        </div>
+    </section>
+
+        <!-- NOTICIAS -->
+    <section class="noticias">
+        <h2>NOTICIAS DESTACADAS</h2>
+
+        <div class="noticias-grid">
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/Cultura2.png') }}" alt="Noticia 1">
+                <div class="info">
+                    <h3>15 DE ABRIL</h3>
+                    <p>Llega bailes tradicionales de jalisco</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/cultura3.png') }}" alt="Noticia 2">
+                <div class="info">
+                    <h3>14 DE SEPTIEMBRE</h3>
+                    <p>Un poco del evento pattrio </p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/navidad.png') }}" alt="Noticia 3">
+                <div class="info">
+                    <h3>22 de diciembre</h3>
+                    <p>pozadas con mucha diversion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social">
+            <a href="#">📷</a>
+            <a href="#">📘</a>
+        </div>
+        <p>PARTICIPANTES: Patrocinadores</p>
+    </footer>
+
+</body>
+</html>

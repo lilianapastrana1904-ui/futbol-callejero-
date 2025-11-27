@@ -1,0 +1,274 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #83c97d;
+    color: #1c1c1c;
+}
+
+/* HEADER */
+header {
+    background-color: #83c97d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 450px;
+    background: url("../static/images/banner.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cuento */
+.cuento {
+    text-align: center;
+}
+
+.img-cuento {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.texto-cuento {
+    margin-top: 20px; /* espacio entre imagen y texto */
+    padding: 10px;
+}
+
+
+/* Cultura */
+.cultura {
+    position: relative;
+    height: 450px;
+    background: url("../static/images/cultura1.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MUSICA */
+.musica {
+    position: relative;
+    height: 450px;
+    background: url("../static/images/musica.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INGLES */
+.ingles {
+    position: relative;
+    height: 450px;
+    background: url("../static/images/ingles.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SALUD */
+.salud {
+    position: relative;
+    height: 450px;
+    background: url("../static/images/salud.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BENEFICIOS */
+.beneficios {
+    position: relative;
+    height: 550px;
+    background: url("../static/images/beneficios.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* informacion */
+.informacion {
+    position: relative;
+    height: 550px;
+    background: url("../static/images/imagen.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(208, 208, 193, 0.5);
+    color: black (232, 255, 236);
+    text-align: center;
+    padding: 30px;
+}
+.info {
+    background-color: (255, 255, 255, 0);
+    color: black (232, 255, 236);
+    text-align: center;
+    padding: 30px;
+}
+.hero h1 {
+    font-size: 2.8em;
+    color: #133205;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0d5c30;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #093c1f;
+}
+
+/* NOTICIAS */
+.noticias {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.noticias h2 {
+    color: #0d5c30;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.noticias-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.noticia {
+    background-color: #fff;
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.noticia:hover {
+    transform: scale(1.03);
+}
+
+.noticia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.noticia .info {
+    background-color: #ffcc00;
+    padding: 15px;
+}
+
+.noticia h3 {
+    font-size: 1em;
+    color: #0d5c30;
+    margin-bottom: 5px;
+}
+
+.noticia p {
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0d5c30;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .social a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* CONTENEDOR PRINCIPAL */
+.contacto-container {
+    background: #1e6f05;      /* azul oscuro como el ejemplo */
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+/* TITULOS */
+.contacto-container h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    border-bottom: 2px solid #ffffff55;
+    padding-bottom: 5px;
+}
+
+/* COLUMNA 1 Y 2 */
+.contacto-info p,
+.contacto-links a {
+    margin-top: 12px;
+    font-size: 16px;
+    color: white;
+}
+
+.contacto-links a:hover {
+    color: #7dd3fc;
+}
+
+/* MAPA */
+.contacto-mapa iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #1e6f05;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

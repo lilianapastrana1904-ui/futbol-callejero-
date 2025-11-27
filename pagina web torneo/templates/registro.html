@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Registro{% endblock %}
+{% block content %}
+{% extends 'base.html' %}
+{% block title %}Registro{% endblock %}
+{% block content %}
+<section class="contenido">
+  <h1>Registro de Equipos</h1>
+  <form class="formulario" method="POST" action="/registro">
+    <label>Nombre del equipo:</label>
+    <input type="text" name="equipo" placeholder="Ej: Los Titanes" required>
+
+    <label>Capitán:</label>
+    <input type="text" name="capitan" placeholder="Nombre del capitán" required>
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telefono" placeholder="555-123-4567" required>
+
+    <button type="submit" class="btn">Guardar Registro</button>
+  </form>
+
+  <br>
+  <a href="/registros" class="btn">Ver equipos registrados</a>
+</section>
+{% endblock %}

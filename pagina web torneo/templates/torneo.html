@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Fútbol Callejero 2026</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('torneo') }}">Torneos</a>
+            <a href="{{ url_for('cultura') }}">Cultura</a>
+            <a href="{{ url_for('cuentos') }}">Cambiemos el cuento</a>
+            <a href="{{ url_for('musicoterapia') }}">Musicoterapia</a>
+             <a href="{{ url_for('cursos') }}">Cursos de ingles</a>
+            <a href="{{ url_for('beneficiarios') }}">Beneficiarios</a>
+            <a href="{{ url_for('salud') }}">Salud</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>TORNEO DE FÚTBOL CALLEJERO 2026</h1>
+            <p>¡REGÍSTRATE AHORA!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZp99akObSztB0HhI-UfyXhFVfjGc8GOjhFwPYbLxNU8hdLw/viewform?usp=dialog" target="_blank" class="btn">INSCRIPCIÓN</a>
+
+            
+        </div>
+    </section>
+ <!-- informacion torneo -->
+   <section class="informacion">
+    <div class="info">
+        <h1>¿Qué es el Fútbol Callejero?</h1>
+
+        <p>
+            El fútbol callejero es nuestra columna vertebral, promovemos la emancipación y autonomía 
+            de las juventudes. Se trata de una metodología de intervención social que utiliza el fútbol 
+            como herramienta para integrar a jóvenes en situaciones de conflicto, recuperando el espíritu 
+            del fútbol jugado en la calle, sin árbitro y basado en acuerdos tácitos de coexistencia.
+        </p>
+
+        <p>
+            Su propósito es abordar temáticas relacionadas con las juventudes, como la violencia, 
+            la exclusión social, los derechos humanos, la diversidad, la igualdad sustantiva y la ciudadanía, 
+            fomentando valores como el respeto, el compañerismo, la solidaridad y la cooperación.
+        </p>
+
+        <hr>
+
+        <h1>¿Dónde nació la propuesta?</h1>
+
+        <p>
+            La propuesta del fútbol callejero como metodología de desarrollo social surgió en Argentina 
+            en 1994, impulsada inicialmente por la organización Defensores del Chaco en el barrio de 
+            Villa Chaco Chico, en Moreno, Buenos Aires.
+        </p>
+
+        <p>
+            Desde entonces, se ha expandido por América Latina a través del "Movimiento de Fútbol Callejero", 
+            siendo adoptada por organizaciones como Juventudes Tejiendo Lazos en México.
+        </p>
+
+        <hr>
+
+        <h1>Requisitos para participar en el Fútbol Callejero</h1>
+
+        <p>1. Edad: Participantes entre 12 y 25 años.</p>
+        <p>2. Asistencia a plática obligatoria sobre reglas.</p>
+        <p>3. Equipos mixtos (mínimo dos hombres o dos mujeres).</p>
+        <p>4. Equipos de 8 jugadores (5 en cancha + 3 cambios).</p>
+        <p>5. Participación en los tres tiempos: acuerdos, juego y reflexión.</p>
+        <p>6. Jugar sin árbitro, basándose en acuerdos previos.</p>
+        <p>7. Promover valores: respeto, compañerismo, solidaridad.</p>
+        <p>8. Presencia de mediadores durante los tres tiempos.</p>
+
+        <p><strong>Fechas de registro:</strong> Por confirmar</p>
+        <p><strong>Lugar:</strong> Alcaldía Iztapalapa</p>
+        <p><strong>Horarios:</strong> Domingos de 8:00 a 14:00</p>
+        <p><strong>Contacto:</strong> 5532415127</p>
+    </div>
+</section>
+
+
+    <!-- NOTICIAS -->
+    <section class="noticias">
+        <h2>NOTICIAS DESTACADAS</h2>
+
+        <div class="noticias-grid">
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/fut3.jpg') }}" alt="Noticia 1">
+                <div class="info">
+                    <h3>15 DE ABRIL</h3>
+                    <p>Llega la nueva edición del torneo</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/P1150636.JPG') }}" alt="Noticia 2">
+                <div class="info">
+                    <h3>1 DE ABRIL</h3>
+                    <p>Resultados y fotos del torneo 2025</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/P1150646.jpg') }}" alt="Noticia 3">
+                <div class="info">
+                    <h3>23 DE MARZO</h3>
+                    <p>Conoce las reglas del torneo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social">
+            <a href="#">📷</a>
+            <a href="#">📘</a>
+        </div>
+        <p>PARTICIPANTES: Patrocinadores</p>
+    </footer>
+
+</body>
+</html>

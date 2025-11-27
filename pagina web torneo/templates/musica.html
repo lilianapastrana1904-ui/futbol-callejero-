@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion del area de la Salud </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+
+        <nav>
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('torneo') }}">Torneos</a>
+            <a href="{{ url_for('cultura') }}">Cultura</a>
+            <a href="{{ url_for('cuentos') }}">Cambiemos el cuento</a>
+            <a href="{{ url_for('musicoterapia') }}">Musicoterapia</a>
+             <a href="{{ url_for('cursos') }}">Cursos de ingles</a>
+            <a href="{{ url_for('beneficiarios') }}">Beneficiarios</a>
+            <a href="{{ url_for('salud') }}">Salud</a>
+            <a href="{{ url_for('contacto') }}">Contacto</a>
+        </nav>
+    </header>
+<!-- MUSICA -->
+    <section class="musica">
+        <div class="overlay">
+        </div>
+    </section>
+ <!-- NOTICIAS -->
+    <section class="noticias">
+        <h2>NOTICIAS DESTACADAS</h2>
+
+        <div class="noticias-grid">
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/musica1.png') }}" alt="Noticia 1">
+                <div class="info">
+                    <h3>15 DE ABRIL</h3>
+                    <p>Llega la nueva edición del torneo</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/musica2.png') }}" alt="Noticia 2">
+                <div class="info">
+                    <h3>1 DE ABRIL</h3>
+                    <p>Resultados y fotos del torneo 2025</p>
+                </div>
+            </div>
+
+            <div class="noticia">
+                <img src="{{ url_for('static', filename='images/musica4.png') }}" alt="Noticia 3">
+                <div class="info">
+                    <h3>23 DE MARZO</h3>
+                    <p>Conoce las reglas del torneo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social">
+            <a href="#">📷</a>
+            <a href="#">📘</a>
+        </div>
+        <p>PARTICIPANTES: Patrocinadores</p>
+    </footer>
+
+
+</body>
+</html>
